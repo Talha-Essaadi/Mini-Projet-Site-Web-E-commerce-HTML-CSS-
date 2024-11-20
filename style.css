@@ -425,7 +425,7 @@ nav svg {
 
 .image-container-1 {
   width: 100%;
-  height: 1vw;
+  height: 100vw;
   background-image: url(https://test.skilliday.com/wp-content/uploads/2024/11/Zibran/10031.jpg);
   background-size: cover;
   background-color: blue;
