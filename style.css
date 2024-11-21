@@ -15,8 +15,8 @@ body {
   --black: #000000;
   --white: #FFFFFF;
   --price-before: #4D4D4D;
-  --promotion-border: #2BC3C6 ;
-  --promotion-background:  #0DE9E9;
+  --promotion-border: #2BC3C6;
+  --promotion-background: #0DE9E9;
   --container-2-background: #D3D3D3;
   --products-title: #3C1818;
   --space: #BFBFBF;
@@ -85,7 +85,7 @@ Medium = 500
 }
 
 .width-90 {
-  width:90%;
+  width: 90%;
 }
 
 .width-1 {
@@ -95,6 +95,11 @@ Medium = 500
 .text-align {
   text-align: start;
   width: 42px;
+}
+
+.text-align-center {
+  text-align: center;
+  
 }
 
 /* T ^^^^^^^^^^^^^ */
@@ -143,6 +148,13 @@ Medium = 500
   color: var(--black);
 }
 
+.principe-title-white {
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 115%;
+  color: var(--white);
+}
+
 .big-title {
   font-family: "Instruments Sans", sans-serif;
   font-weight: 400;
@@ -174,6 +186,7 @@ Medium = 500
   font-size: 13px;
   line-height: 122%;
   color: var(--price-before);
+  text-decoration: line-through;
 }
 
 .livraison {
@@ -215,6 +228,23 @@ Medium = 500
 
 }
 
+.fotter-text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 115%;
+  color: var(--white);
+
+}
+
+.contacts {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 115%;
+  color: var(--contacts);
+  text-decoration: underline;
+
+}
+
 
 /* Text Styles ^^^^^^^^^^^^^^^^ */
 html, body {
@@ -226,7 +256,7 @@ html, body {
 
 .container {
   width: 100%;
-  min-height:100vh;
+  min-height: 100vh;
   overflow-x: hidden;
   background-color: var(--white);
 
@@ -234,6 +264,14 @@ html, body {
 
 
 /* Navbar >>>>>> */
+.header {
+ /* position: fixed;
+  z-index: 999; 
+
+  */
+
+}
+
 nav {
   height: 140px;
   background-image: var(--header-background);
@@ -415,7 +453,7 @@ nav svg {
   visibility: hidden;
 }
 
-/* container 1 >>>>>>>>>>> */
+/* container 1 >>>>>>>>>>>> */
 .container-1 {
   width: 100%;
   min-height: 100vh;
@@ -428,7 +466,7 @@ nav svg {
   height: 100vw;
   background-image: url(https://test.skilliday.com/wp-content/uploads/2024/11/Zibran/10031.jpg);
   background-size: cover;
-  background-color: blue;
+
 }
 
 
@@ -463,6 +501,9 @@ nav svg {
 .container-2 {
   width: 100%;
   min-height: 100vh;
+  display:flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 
   background-color: var(--container-2-background);
 
@@ -473,6 +514,7 @@ nav svg {
 
 
 .container-2-top {
+  width:375px;
   gap: 16px;
 }
 
@@ -498,7 +540,10 @@ nav svg {
 }
 
 .container-2-top-price {
-  gap: 32px;
+  width:100%;
+  display:flex ;
+  justify-content: center;
+  gap: 25px;
 }
 
 .promotion {
@@ -556,6 +601,8 @@ nav svg {
 }
 
 .container-2-bottom {
+ padding-left: 35px;
+  width:375px;
   gap: 29px;
 }
 
@@ -599,125 +646,264 @@ nav svg {
 }
 
 .container-3 {
-  width:100%;
-  min-height:100vh;
+  width: 100%;
+  min-height: 100vh;
   background-image: var(--collections-background);
 }
 
 
 
 .collection-product-1 {
-  width:335px;
-  height:522px;
+  width: 335px;
+  height: 522px;
   border-radius: 20px;
-  background-color:var(--container-2-background) ;
-  gap:25px;
- 
+  background-color: var(--container-2-background);
+  gap: 25px;
+
 }
 
 .collection-product-1-image {
-  width:305px;
-  height:437px;
+  width: 305px;
+  height: 437px;
 }
 
 
 .collectione-product-title {
- 
-  padding-left:25px;
+
+  padding-left: 25px;
 }
 
 .container-3 {
-  gap:52px;
-  padding-top:20px;
-  padding-bottom:70px;
-  
+  gap: 52px;
+  padding-top: 20px;
+  padding-bottom: 70px;
+
 }
 
 
 .container-3-title {
- padding: 0px 15px;
+  padding: 0px 15px;
 }
 
 
 .collection-products {
-  gap:25px;
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 25px;
 }
 
 
 /* container 4 */
 
 .Container-4 {
-  width:100%;
-  min-height:100vh;
-    background-color: var(--container-2-background);
-  padding:24px  0px ;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--container-2-background);
+  padding: 24px 0px;
 }
 
-.container-4-title  {
-  height:141px;
-  gap:12px;
-  padding-left:15px;
+.container-4-title {
+  height: 141px;
+  gap: 12px;
+  padding-left: 15px;
 }
 
 .product-1 {
-  width:163px;
-  height:268px;
-  border:1px solid var(--black);
+  width: 40%;
+  height: 56vw;
+  max-height: 90vh;
+  border: 1px solid var(--black);
   border-radius: 20px;
   background-image: var(--products-background);
-  padding:22px 0px 0px 0px ;
-  gap:29px;
-  position:relative;
+
+  padding-top: 2.5vw;
+  gap: 10px;
+  position: relative;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
 
 }
 
+.product-image {
+  width: 35vw;
+  height: clamp(35vw, 100vw, 1000px);;
+  max-height: 70vh;
+
+}
+.price {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.price-after {
+
+  font-size: clamp(14px, 3vw, 20px);
+}
+
+.price-after-1 {
+  width:130px;
+  font-size: clamp(14px, 3vw, 20px);
+}
+
+
 .product-promotion {
   position: absolute;
-  top:30px;
-  left:20px;
+  top:  clamp(20px, 5vw, 100px);;
+  left: 4vw;
 
 }
 
 .product-1-details {
-  gap:20px;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  
+  justify-content:space-evenly;
+   padding-left:  clamp(20px, 5vw, 100px);
+  height:100%;
+  gap: 10px;
 }
 
-.price {
-  gap:5px;
-}
+
 
 
 .products {
-  gap:12px;
+  gap: 12px;
 }
 
 
 /* container-x >>>>>>>>>>> */
 
 .container-x {
-  padding:30px 0px;
+  padding: 40px 0px;
+
   min-height: 100vh;
-  width:100%;
+  width: 100%;
   background-image: var(--products-background);
 
-  gap:26px;
+  gap: 26px;
 }
 
 .info-1 {
-  width:345px;
-  height:193px;
+  width: 345px;
+  height: 193px;
   background-color: var(--container-2-background);
   border-radius: 20px;
-  padding:10px;
-  gap:10px;
+  padding: 10px;
+  gap: 10px;
 }
 
 
-/******/
+
+
+/* fotter >>>>>>>>>> */
+
+.fotter {
+  width: 100%;
+  min-height: 100vh;
+  background-image: var(--fotter-background);
+  padding-bottom: 52px;
+
+}
+
+.fotter-logo {
+  width: 100%;
+  height: 208px;
+}
+
+.fotter-links {
+  gap: 17px;
+}
+
+.fotter-Contacts-and-fotter-socail-icons {
+  height: 290px;
+  gap: 60px;
+}
+
+.div-1 {
+  gap: 10px;
+}
+
+.fotter-Contacts {
+
+  gap: 17px;
+}
+
+.div-2 {
+  gap: 7px;
+
+}
+
+
+.fotter-socail-icons {
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.div-x {
+  display: flex;
+  gap: 20px;
+}
+
+.socail-icons {
+
+  color: var(--white);
+  width: 35px;
+}
+
+
+.fotter-copy-rights {
+  padding-top: 46px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.gap-1 {
+  gap: 55px;
+}
+
+.gap-2 {
+  gap: 37px;
+}
 
 
 
 
+.links-and-contacts {
 
 
 
+  gap: 55px;
+}
+
+
+.fotter-links, .fotter-Contacts-and-fotter-socail-icons {
+  width: 375px;
+}
+
+
+
+
+@media(min-width:750px) {
+  .fotter-links {
+    padding-left: 30px;
+  }
+.container-2-bottom {
+  margin-top:  clamp(20px, 18vw, 150px);
+}
+}
+
+
+
+.cccc{
+  display: none !important;
+}
