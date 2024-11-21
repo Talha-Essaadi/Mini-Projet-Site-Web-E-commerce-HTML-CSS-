@@ -104,14 +104,12 @@
                             </svg>
                         </label>
                         <a class="home-link home" href="#"></a>
-                        <a href="#">Accueil</a>
-                        <a href="#">Tables</a>
-                        <a href="#">Chaises</a>
-                        <a href="#">Canapés</a>
-                        <a href="#">Fauteuil</a>
-                        <a href="#">Canapés</a>
-                        <a href="#">Pouf</a>
-                        <a href="#">Contact</a>
+                        <a href="/Site%20Web%20E-commerce/">Accueil</a>
+                        <a href="/Site%20Web%20E-commerce//checkout.html">Checkout</a>
+                        <a href="/Site%20Web%20E-commerce/product-page.html">Product page</a>
+                        <a href="/Site%20Web%20E-commerce/Collections.html">Collections</a>
+
+                        
                     </div>
 
                 </nav> <!-- Navbar -->
@@ -239,15 +237,138 @@
                             </div>
                         </div>
                     </div><!--varaints-->
+<!--888888888888888888-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page with Cart</title>
+  <style>
+    /* Root variables */
+    :root {
+      --color-1: black;
+      --text-color: white;
+      --accent-color: skyblue;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Cart Styles */
+    #cart-active {
+      display: none;
+    }
+
+    .cart-overlay {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 80%;
+      max-width: 300px;
+      height: 100vh;
+      background: white;
+      box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+      transition: right 0.6s ease-out;
+      z-index: 15;
+      padding: 20px;
+    }
+
+    #cart-active:checked ~ .cart-overlay {
+      right: 0;
+    }
+
+    .cart-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .cart-header h2 {
+      font-size: 18px;
+    }
+
+    .cart-header button {
+      background: transparent;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .cart-items {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+    }
+
+    .cart-item h3 {
+      font-size: 16px;
+      margin: 0;
+    }
+
+    .cart-item span {
+      font-size: 14px;
+      color: gray;
+    }
+
+    
+
+  
+  </style>
+
+
+ 
+
+  
+  <input type="checkbox" id="cart-active" />
+
+  <div class="cart-overlay">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <label for="cart-active">
+        <button>&times;</button>
+      </label>
+    </div>
+    <div class="cart-items">
+      <div class="cart-item">
+        <h3>Sofa Luxe</h3>
+        <span>5,999 DH</span>
+      </div>
+      <div class="cart-item">
+        <h3>Chair Comfort</h3>
+        <span>1,999 DH</span>
+      </div>
+    </div>
+  </div>
+
+
+<!--888888888888888888-->
 
                     <div class="sabmit-buttons width-1 flex-start">
                         <div class="sabmit flex">
-                            <div class="sabmit-button-1 flex"><h1
-                                    class="button">Ajouter au panier</h1></div>
-                            <div class="sabmit-button-2 flex"><h1
-                                    class="button-white">Acheter
-                                    maintenant</h1></div>
-                        </div>
+                            <div class="sabmit-button-1 flex">
+                              <!-- Link the button to the cart using the label's `for` attribute -->
+                              <label for="cart-active" class="button">Ajouter au panier</label>
+                            </div>
+                            <a href="/Site%20Web%20E-commerce/checkout.html">
+                              <div class="sabmit-button-2 flex">
+                                <h1 class="button-white">Acheter maintenant</h1>
+                              </div>
+                            </a>
+                          </div>
+
                         <div class="sabmit-bottom row-space-between">
                             <div class="share flex-row-start">
 
@@ -279,7 +400,7 @@
                     <h1 class="container-title-white">Collections</h1>
                 </div>
                 <div class="collection-products ">
-
+                    <a  href="/Site%20Web%20E-commerce/product-page.html">
                     <div class="collection-product-1 flex">
                         <div class="collection-product-1-image">
                             <img width="305px"
@@ -298,7 +419,8 @@
                                     d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" /></svg>
                         </div>
                     </div><!-- product 1 -->
-
+                </a>
+                <a  href="/Site%20Web%20E-commerce/product-page.html">
                     <div class="collection-product-1 flex">
                         <div class="collection-product-1-image">
                             <img width="305px"
@@ -317,7 +439,8 @@
                                     d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" /></svg>
                         </div>
                     </div><!-- product 2 -->
-
+                </a>
+                <a  href="/Site%20Web%20E-commerce/product-page.html">
                     <div class="collection-product-1 flex">
                         <div class="collection-product-1-image">
                             <img width="305px"
@@ -336,6 +459,8 @@
                                     d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" /></svg>
                         </div>
                     </div><!-- product 3 -->
+                </a>
+                <a  href="/Site%20Web%20E-commerce/product-page.html">
 
                     <div class="collection-product-1 flex">
                         <div class="collection-product-1-image">
@@ -355,6 +480,8 @@
                                     d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" /></svg>
                         </div>
                     </div><!-- product 4 -->
+                </a>
+                <a  href="/Site%20Web%20E-commerce/product-page.html">
 
                     <div class="collection-product-1 flex">
                         <div class="collection-product-1-image">
@@ -374,6 +501,8 @@
                                     d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" /></svg>
                         </div>
                     </div><!-- product 5 -->
+                </a>
+             
 
                 </div><!--collection-products -->
             </div><!-- Container 3 -->
@@ -387,8 +516,8 @@
                 </div>
 
                 <div class="products width-1 row-space-between ">
-
-                    <div class="product-1  ">
+       <a  href="/Site%20Web%20E-commerce/product-page.html">
+                    <div  class="product-1  ">
                         <img class="product-image"
                             src="https://test.skilliday.com/wp-content/uploads/2024/11/Zibran/10062.jpg"
                             width="133px" height="133px" alt>
@@ -405,7 +534,9 @@
                             </div>
                         </div>
                     </div><!-- product 1 -->
-
+                </a>
+            
+            <a  href="/Site%20Web%20E-commerce/product-page.html">
                     <div class="product-1  ">
                         <img class="product-image"
                             src="https://test.skilliday.com/wp-content/uploads/2024/11/Zibran/10007.jpg"
@@ -423,6 +554,8 @@
                             </div>
                         </div>
                     </div><!-- product 2 -->
+                </a>
+                <a  href="/Site%20Web%20E-commerce/product-page.html">
 
                     <div class="product-1  ">
                         <img class="product-image"
@@ -442,6 +575,9 @@
                         </div>
                     </div><!-- product 3 -->
 
+                </a>
+                <a  href="/Site%20Web%20E-commerce/product-page.html">
+
                     <div class="product-1  ">
                         <img class="product-image"
                             src="https://test.skilliday.com/wp-content/uploads/2024/11/Zibran/10065.jpg"
@@ -459,6 +595,8 @@
                             </div>
                         </div>
                     </div><!-- product 4 -->
+                </a>
+                <a  href="/Site%20Web%20E-commerce/product-page.html">
 
                     <div class="product-1  ">
                         <img class="product-image"
@@ -477,6 +615,8 @@
                             </div>
                         </div>
                     </div><!-- product 5 -->
+                </a>
+                <a  href="/Site%20Web%20E-commerce/product-page.html">
 
                     <div class="product-1  ">
                         <img class="product-image"
@@ -495,6 +635,8 @@
                             </div>
                         </div>
                     </div><!-- product 6 -->
+                </a>
+                <a  href="/Site%20Web%20E-commerce/product-page.html">
 
                     <div class="product-1  ">
                         <img class="product-image"
@@ -513,6 +655,8 @@
                             </div>
                         </div>
                     </div><!-- product 7 -->
+                </a>
+                <a  href="/Site%20Web%20E-commerce/product-page.html">
 
                     <div class="product-1  ">
                         <img class="product-image"
@@ -531,6 +675,8 @@
                             </div>
                         </div>
                     </div><!-- product 8 -->
+                </a>
+                <a  href="/Site%20Web%20E-commerce/product-page.html">
 
                     <div class="product-1  ">
                         <img class="product-image"
@@ -549,6 +695,8 @@
                             </div>
                         </div>
                     </div><!-- product 9 -->
+                </a>
+                <a  href="/Site%20Web%20E-commerce/product-page.html">
 
                     <div class="product-1  ">
                         <img class="product-image"
@@ -567,6 +715,8 @@
                             </div>
                         </div>
                     </div><!-- product  10 -->
+                </a>
+                <a  href="/Site%20Web%20E-commerce/product-page.html">
 
                     <div class="product-1  ">
                         <img class="product-image"
@@ -585,6 +735,8 @@
                             </div>
                         </div>
                     </div><!-- product 11 -->
+                </a>
+                <a  href="/Site%20Web%20E-commerce/product-page.html">
 
                     <div class="product-1  ">
                         <img class="product-image"
@@ -603,6 +755,8 @@
                             </div>
                         </div>
                     </div><!-- product 12 -->
+                </a>
+                <a  href="/Site%20Web%20E-commerce/product-page.html">
 
                     <div class="product-1  ">
                         <img class="product-image"
@@ -621,6 +775,8 @@
                             </div>
                         </div>
                     </div><!-- product 13 -->
+                </a>
+                <a  href="/Site%20Web%20E-commerce/product-page.html">
 
                     <div class="product-1  ">
                         <img class="product-image"
@@ -639,6 +795,8 @@
                             </div>
                         </div>
                     </div><!-- product 14 -->
+                </a>
+                <a  href="/Site%20Web%20E-commerce/product-page.html">
 
                     <div class="product-1  ">
                         <img class="product-image"
@@ -657,6 +815,8 @@
                             </div>
                         </div>
                     </div><!-- product 15 -->
+                </a>
+                <a  href="/Site%20Web%20E-commerce/product-page.html">
 
                     <div class="product-1  ">
                         <img class="product-image"
@@ -675,6 +835,8 @@
                             </div>
                         </div>
                     </div><!-- product 16 -->
+                </a>
+                
                 </div><!-- products -->
 
                 <div class="place-affichage width-1 flex-row-center">
@@ -692,7 +854,8 @@
                     </div>
 
                     <div class="products width-1 row-space-between ">
-
+                   
+                    <a  href="/Site%20Web%20E-commerce/product-page.html">
                         <div class="product-1  ">
                             <img class="product-image"
                                 src="https://test.skilliday.com/wp-content/uploads/2024/11/Zibran/10053.jpg"
@@ -711,6 +874,8 @@
                                 </div>
                             </div>
                         </div><!-- product 7 -->
+                    </a>
+                    <a  href="/Site%20Web%20E-commerce/product-page.html">
 
                         <div class="product-1  ">
                             <img class="product-image"
@@ -731,6 +896,9 @@
                             </div>
                         </div><!-- product 3 -->
 
+                    </a>
+                    <a  href="/Site%20Web%20E-commerce/product-page.html">
+
                         <div class="product-1  ">
                             <img class="product-image"
                                 src="https://test.skilliday.com/wp-content/uploads/2024/11/Zibran/10014.jpg"
@@ -749,7 +917,8 @@
                                 </div>
                             </div>
                         </div><!-- product 9 -->
-
+                    </a>
+                    <a  href="/Site%20Web%20E-commerce/product-page.html">
                         <div class="product-1  ">
                             <img class="product-image"
                                 src="https://test.skilliday.com/wp-content/uploads/2024/11/Zibran/10046.jpeg"
@@ -768,6 +937,8 @@
                                 </div>
                             </div>
                         </div><!-- product 4 -->
+                    </a>
+                   
 
                     </div><!-- products -->
                     <div class="place-affichage width-1 flex-row-center">
@@ -839,11 +1010,12 @@
         
                             <div class="sabmit-buttons width-1 flex-start">
                                 <div class="sabmit flex">
-                                    <div class="sabmit-button-1 flex"><h1
-                                            class="button">Ajouter au panier</h1></div>
+                                    <div class="sabmit-button-1 flex"><label for="cart-active" class="button">Ajouter au panier</label></div>
+                                            <a  href="/Site%20Web%20E-commerce//checkout.html">
                                     <div class="sabmit-button-2 flex"><h1
                                             class="button-white">Acheter
                                             maintenant</h1></div>
+                                        </a>
                                 </div>
                                 <div class="sabmit-bottom row-space-between">
                                     <div class="share flex-row-start">
@@ -891,7 +1063,8 @@
                         </div>
     
                         <div class="products width-1 row-space-between ">
-    
+                       
+                        <a  href="/Site%20Web%20E-commerce/product-page.html">
                             <div class="product-1  ">
                                 <img class="product-image"
                                     src="https://test.skilliday.com/wp-content/uploads/2024/11/Zibran/10074.jpg"
@@ -909,6 +1082,8 @@
                                     </div>
                                 </div>
                             </div><!-- product 15 -->
+                        </a>
+                        <a  href="/Site%20Web%20E-commerce/product-page.html">
     
                             <div class="product-1  ">
                                 <img class="product-image"
@@ -927,6 +1102,8 @@
                                     </div>
                                 </div>
                             </div><!-- product 16 -->
+                        </a>
+                        <a  href="/Site%20Web%20E-commerce/product-page.html">
 
 
                             <div class="product-1  ">
@@ -945,6 +1122,8 @@
                                     </div>
                                 </div>
                             </div><!-- product 33 -->
+                        </a>
+                        <a  href="/Site%20Web%20E-commerce/product-page.html">
 
                             <div class="product-1  ">
                                 <img class="product-image"
@@ -962,7 +1141,8 @@
                                     </div>
                                 </div>
                             </div><!-- product 44 -->
-                           
+                        </a>
+                        
     
                   
     
@@ -1036,11 +1216,12 @@
             
                                 <div class="sabmit-buttons width-1 flex-start">
                                     <div class="sabmit flex">
-                                        <div class="sabmit-button-1 flex"><h1
-                                                class="button">Ajouter au panier</h1></div>
+                                        <div class="sabmit-button-1 flex"><label for="cart-active" class="button">Ajouter au panier</label></div>
+                                                <a  href="/Site%20Web%20E-commerce//checkout.html">
                                         <div class="sabmit-button-2 flex"><h1
                                                 class="button-white">Acheter
                                                 maintenant</h1></div>
+                                            </a>
                                     </div>
                                     <div class="sabmit-bottom row-space-between">
                                         <div class="share flex-row-start">
@@ -1096,7 +1277,8 @@
                         </div>
     
                         <div class="products width-1 row-space-between ">
-    
+                        
+                        <a  href="/Site%20Web%20E-commerce/product-page.html">
                             <div class="product-1  ">
                                 <img class="product-image"
                                     src="https://test.skilliday.com/wp-content/uploads/2024/11/Zibran/10074.jpg"
@@ -1114,7 +1296,8 @@
                                     </div>
                                 </div>
                             </div><!-- product 15 -->
-    
+                        </a>
+                        <a  href="/Site%20Web%20E-commerce/product-page.html">
                             <div class="product-1  ">
                                 <img class="product-image"
                                     src="https://test.skilliday.com/wp-content/uploads/2024/11/Zibran/10076.jpg"
@@ -1132,7 +1315,8 @@
                                     </div>
                                 </div>
                             </div><!-- product 16 -->
-
+                        </a>
+                        <a  href="/Site%20Web%20E-commerce/product-page.html">
                             <div class="product-1  ">
                                 <img class="product-image"
                                     src="https://test.skilliday.com/wp-content/uploads/2024/11/Zibran/10053.jpg"
@@ -1150,7 +1334,8 @@
                                     </div>
                                 </div>
                             </div><!-- product 7 -->
-
+                        </a>
+                        <a  href="/Site%20Web%20E-commerce/product-page.html">
                             <div class="product-1  ">
                                 <img class="product-image"
                                     src="https://test.skilliday.com/wp-content/uploads/2024/11/Zibran/10014.jpg"
@@ -1168,7 +1353,8 @@
                                     </div>
                                 </div>
                             </div><!-- product 9 -->
-
+                        </a>
+                        <a  href="/Site%20Web%20E-commerce/product-page.html">
                             <div class="product-1  ">
                                 <img class="product-image"
                                     src="https://test.skilliday.com/wp-content/uploads/2024/11/Zibran/10071.jpg"
@@ -1186,7 +1372,8 @@
                                     </div>
                                 </div>
                             </div><!-- product  10 -->
-
+                        </a>
+                        <a  href="/Site%20Web%20E-commerce/product-page.html">
                             <div class="product-1  ">
                                 <img class="product-image"
                                     src="https://test.skilliday.com/wp-content/uploads/2024/11/Zibran/10035.jpg"
@@ -1203,7 +1390,8 @@
                                     </div>
                                 </div>
                             </div><!-- product 66 -->
-
+                        </a>
+                        <a  href="/Site%20Web%20E-commerce/product-page.html">
                             <div class="product-1  ">
                                 <img class="product-image"
                                     src="https://test.skilliday.com/wp-content/uploads/2024/11/Zibran/10068.jpg"
@@ -1221,7 +1409,8 @@
                                     </div>
                                 </div>
                             </div><!-- product 5 -->
-
+                        </a>
+                        <a  href="/Site%20Web%20E-commerce/product-page.html">
                             <div class="product-1  ">
                                 <img class="product-image"
                                     src="https://test.skilliday.com/wp-content/uploads/2024/11/Zibran/10067.jpeg"
@@ -1239,6 +1428,8 @@
                                     </div>
                                 </div>
                             </div><!-- product 8 -->
+                        </a>
+                      
                             <!--yyyyy -->
 
 
@@ -1297,11 +1488,12 @@
             
                                 <div class="sabmit-buttons width-1 flex-start">
                                     <div class="sabmit flex">
-                                        <div class="sabmit-button-1 flex"><h1
-                                                class="button">Ajouter au panier</h1></div>
+                                        <div class="sabmit-button-1 flex"><label for="cart-active" class="button">Ajouter au panier</label></div>
+                                                <a  href="/Site%20Web%20E-commerce//checkout.html">
                                         <div class="sabmit-button-2 flex"><h1
                                                 class="button-white">Acheter
                                                 maintenant</h1></div>
+                                            </a>
                                     </div>
                                     <div class="sabmit-bottom row-space-between">
                                         <div class="share flex-row-start">

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Site Web E-commerce</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar width-1 flex-row-center"><h1 class="livraison text-align-center">Livraison a domicile partout au Maroc</h1></div>
+    <div class="header width-1">
+        <nav>
+            <div class="logo">
+                <div class="icons">
+
+                    <!-- Person profile -->
+                    <svg class="profile"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24px" viewBox="0 -960 960 960"
+                        width="24px"
+                        fill="#FF9120"><path
+                            d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z" /></svg>
+
+                    <!-- cart -->
+                    <svg class="cart" xmlns="http://www.w3.org/2000/svg"
+                        height="24px" viewBox="0 -960 960 960"
+                        width="24px"
+                        fill="#FF9120"><path
+                            d="M200-80q-33 0-56.5-23.5T120-160v-480q0-33 23.5-56.5T200-720h80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720h80q33 0 56.5 23.5T840-640v480q0 33-23.5 56.5T760-80H200Zm0-80h560v-480H200v480Zm280-240q83 0 141.5-58.5T680-600h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85h-80q0 83 58.5 141.5T480-400ZM360-720h240q0-50-35-85t-85-35q-50 0-85 35t-35 85ZM200-160v-480 480Z" /></svg>
+
+                    <!-- Search -->
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        height="24px"
+                        viewBox="0 -960 960 960" width="24px"
+                        fill="#FF9120"><path
+                            d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" /></svg>
+
+                </div>
+                <div class="logo-center">
+                    <img class="logo-image"
+                        src="https://test.skilliday.com/wp-content/uploads/2024/11/Zibran/this-removebg-preview.png"
+                        alt>
+                </div>
+                <div class="icons icons-2">
+
+                    <!-- Person profile -->
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        height="24px"
+                        viewBox="0 -960 960 960" width="24px"
+                        fill="#FF9120"><path
+                            d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z" /></svg>
+
+                    <!-- cart -->
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        height="24px"
+                        viewBox="0 -960 960 960" width="24px"
+                        fill="#FF9120"><path
+                            d="M200-80q-33 0-56.5-23.5T120-160v-480q0-33 23.5-56.5T200-720h80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720h80q33 0 56.5 23.5T840-640v480q0 33-23.5 56.5T760-80H200Zm0-80h560v-480H200v480Zm280-240q83 0 141.5-58.5T680-600h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85h-80q0 83 58.5 141.5T480-400ZM360-720h240q0-50-35-85t-85-35q-50 0-85 35t-35 85ZM200-160v-480 480Z" /></svg>
+
+                    <!-- Search -->
+                    <svg class="search"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24px" viewBox="0 -960 960 960"
+                        width="24px"
+                        fill="#FF9120"><path
+                            d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" /></svg>
+
+                </div>
+            </div>
+            <input type="checkbox" id="sidebar-active" />
+            <label for="sidebar-active" class="open-sidebar-button">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="#FF9120"
+                    class="menu-icon">
+                    <path
+                        d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+            </label>
+
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container">
+                <label for="sidebar-active"
+                    class="close-sidebar-button">
+                    <svg
+                        class="close-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24px"
+                        viewBox="0 -960 960 960"
+                        width="24px"
+                        fill="#FF9120">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg>
+                </label>
+                <a class="home-link home" href="#"></a>
+                <a href="/Site%20Web%20E-commerce/">Accueil</a>
+                <a href="/Site%20Web%20E-commerce//checkout.html">Checkout</a>
+                <a href="/Site%20Web%20E-commerce/product-page.html">Product page</a>
+                <a href="/Site%20Web%20E-commerce/Collections.html">Collections</a>
+
+            </div>
+
+        </nav> <!-- Navbar -->
+    </div> <!-- header -->
+
+
+    <!--              -->
+
+    <div class="container-2  ">
+        <div class="container-2-top flex width-1">
+            <div class="image--title flex">
+                <div class="container-2-image"></div>
+                <div class="container-2-image-title">
+                    <h1 class=" varaint-title text-align">ILYAS</h1>
+                    <h1 class="principe-title">SALON ALPHA</h1>
+                </div>
+            </div>
+            <div class="prix--promotion  width-1">
+                <div class="container-2-top-price flex-row-start">
+                    <h1 class="price-before">11,500.00 dh</h1>
+                    <h1 class="button">7,999.00 dh</h1>
+                    <div class="promotion flex"><h1
+                            class="product-title">Promotion</h1>
+                    </div>
+                </div>
+                <h1 class="livraison">Livraison Gratuite, Prix HT</h1>
+            </div>
+        </div><!-- Container 2 top -->
+
+        <div class="container-2-bottom flex ">
+            <div class="varaints flex-start width-1">
+                <div class="buttons-variants flex-start ">
+
+                    <div class="buttons-variants-1 flex-start width-1 ">
+                        <h1 class="varaint-title">Couleur Fauteuil 1
+                            place</h1>
+                        <div class="buttons flex-start">
+                            <div class="buttons-1 flex-row-start">
+                                <div style="width:101px;"
+                                    class="Vert Marron flex"><h1
+                                        class="button-white">Vert</h1></div>
+                                <div style="width:101px;"
+                                    class="Marron flex"><h1
+                                        class="button">Marron</h1></div>
+                                <div style="width:96px;"
+                                    class="Marron flex"><h1
+                                        class="button">Rouge</h1></div>
+                            </div>
+                            <div class="buttons-1 flex-row-start">
+                                <div style="width:79px;"
+                                    class="Marron flex"><h1
+                                        class="button">Gris</h1></div>
+                                <div style="width:79px;"
+                                    class="Marron flex"><h1
+                                        class="button">Blue</h1></div>
+                                <div style="width:96px;"
+                                    class="Marron flex"><h1
+                                        class="button">Jaune</h1></div>
+                            </div>
+                        </div>
+                    </div><!--buttons-variants-1-->
+                    <!---->
+
+                    <div class="buttons-variants-1 flex-start width-1 ">
+                        <h1 class="varaint-title">Couleur Fauteuil 1
+                            place</h1>
+                        <div class="buttons flex-start">
+                            <div class="buttons-1 flex-row-start">
+                                <div style="width:101px;"
+                                    class="Vert Marron flex"><h1
+                                        class="button-white">Vert</h1></div>
+                                <div style="width:101px;"
+                                    class="Marron flex"><h1
+                                        class="button">Marron</h1></div>
+                                <div style="width:96px;"
+                                    class="Marron flex"><h1
+                                        class="button">Rouge</h1></div>
+                            </div>
+                            <div class="buttons-1 flex-row-start">
+                                <div style="width:79px;"
+                                    class="Marron flex"><h1
+                                        class="button">Gris</h1></div>
+                                <div style="width:79px;"
+                                    class="Marron flex"><h1
+                                        class="button">Blue</h1></div>
+                                <div style="width:96px;"
+                                    class="Marron flex"><h1
+                                        class="button">Jaune</h1></div>
+                            </div>
+                        </div>
+                    </div><!--buttons-variants-1-->
+
+                </div>
+                <div class="quantite flex-start">
+                    <h1 class="varaint-title">Quantite</h1>
+                    <div class="quantite-button flex">
+                        <div class="quantite-plus flex-row-start">
+                            <h2 class="text">-</h2>
+                            <h2 class="text">1</h2>
+                            <h2 class="text">+</h2>
+                        </div>
+                    </div>
+                </div>
+            </div><!--varaints-->
+
+            <div class="sabmit-buttons width-1 flex-start">
+                <div class="sabmit flex">
+                    <div class="sabmit-button-1 flex"><label for="cart-active" class="button">Ajouter au panier</label></div>
+                    <a  href="/Site%20Web%20E-commerce//checkout.html">
+                    <div class="sabmit-button-2 flex"><h1
+                            class="button-white">Acheter
+                            maintenant</h1></div>
+                        </a>
+                </div>
+                <p class="varaint-title padding">Le Cosylaine s’invite en douceur dans nos intérieurs. Chaud, réconfortant, élégant, épuré, c’est la matière doudou, facile à adopter pour se concocter une déco dans l’air du temps.
+
+                    Si vous souhaitez profiter au maximum de vos périodes de calme chez vous, choisissez le fauteuil Cosylaine. Car il est essentiel d'avoir des moments pour soi, mais c'est encore mieux d'être parfaitement confortable durant ces instants.
+                    
+                    Matière: Tissu Bouclette
+                    
+                    Dimension : Largeur 78cm / Hauteur 35cm
+                    
+                    <br> <br> <span style="color:red;">N.B Les prix sont HT</span></p>
+
+                <div class="sabmit-bottom row-space-between">
+                    <div class="share flex-row-start">
+
+                        <svg class="share-icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24px" viewBox="0 -960 960 960"
+                            width="24px" fill="#FF9120"><path
+                                d="M680-80q-50 0-85-35t-35-85q0-6 3-28L282-392q-16 15-37 23.5t-45 8.5q-50 0-85-35t-35-85q0-50 35-85t85-35q24 0 45 8.5t37 23.5l281-164q-2-7-2.5-13.5T560-760q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35q-24 0-45-8.5T598-672L317-508q2 7 2.5 13.5t.5 14.5q0 8-.5 14.5T317-452l281 164q16-15 37-23.5t45-8.5q50 0 85 35t35 85q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T720-200q0-17-11.5-28.5T680-240q-17 0-28.5 11.5T640-200q0 17 11.5 28.5T680-160ZM200-440q17 0 28.5-11.5T240-480q0-17-11.5-28.5T200-520q-17 0-28.5 11.5T160-480q0 17 11.5 28.5T200-440Zm480-280q17 0 28.5-11.5T720-760q0-17-11.5-28.5T680-800q-17 0-28.5 11.5T640-760q0 17 11.5 28.5T680-720Zm0 520ZM200-480Zm480-280Z" /></svg>
+                        <h1 class="button">Share</h1>
+                    </div>
+                   
+                </div>
+            </div>
+        </div><!-- container 2 bottom-->
+
+    </div><!-- Container 2 -->
+
+    <div class="Container-4 flex-start">
+        <div class="container-4-title flex-start ">
+            <h1 class="container-title">Vous aimerez peut-être</h1>
+            
+        </div>
+
+        <div class="products  width-1 row-space-between prts">
+
+            <div class="product-1 prt-width ">
+                <img class="product-image prt-width-image"
+                    src="https://test.skilliday.com/wp-content/uploads/2024/11/Zibran/10062.jpg"
+                    width="133px" height="133px" alt>
+                <div class="promotion product-promotion  flex"><h1
+                        class="product-title">Promotion</h1></div>
+                <div class="product-1-details ">
+                    <h1 class="product-title price-after">Canape
+                        incurve</h1>
+                    <div class="price ">
+                        <h1 class="price-before price-after-1">11,500.00
+                            dh</h1>
+                        <h1 class="button price-after-1">7,999.00
+                            dh</h1>
+                    </div>
+                </div>
+            </div><!-- product 1 -->
+
+            <div class="product-1 prt-width ">
+                <img class="product-image prt-width-image"
+                    src="https://test.skilliday.com/wp-content/uploads/2024/11/Zibran/10007.jpg"
+                    width="133px" height="133px" alt>
+                <div class="promotion product-promotion  flex"><h1
+                        class="product-title">Promotion</h1></div>
+                <div class="product-1-details ">
+                    <h1 class="product-title price-after ">Canape
+                        MODULYS</h1>
+                    <div class="price ">
+                        <h1 class="price-before price-after-1">11,500.00
+                            dh</h1>
+                        <h1 class="button price-after-1">7,999.00
+                            dh</h1>
+                    </div>
+                </div>
+            </div><!-- product 2 -->
+
+            <div class="product-1 prt-width ">
+                <img class="product-image prt-width-image"
+                    src="https://test.skilliday.com/wp-content/uploads/2024/11/Zibran/10009.jpg"
+                    width="133px" height="133px" alt>
+                <div class="promotion product-promotion  flex"><h1
+                        class="product-title">Promotion</h1></div>
+                <div class="product-1-details ">
+                    <h1 class="product-title price-after">Creatif -
+                        Canape modulable</h1>
+                    <div class="price ">
+                        <h1 class="price-before price-after-1">11,500.00
+                            dh</h1>
+                        <h1 class="button price-after-1">7,999.00
+                            dh</h1>
+                    </div>
+                </div>
+            </div><!-- product 3 -->
+
+            <div class="product-1 prt-width ">
+                <img class="product-image prt-width-image "
+                    src="https://test.skilliday.com/wp-content/uploads/2024/11/Zibran/10065.jpg"
+                    width="133px" height="133px" alt>
+                <div class="promotion product-promotion  flex"><h1
+                        class="product-title">Promotion</h1></div>
+                <div class="product-1-details ">
+                    <h1 class="product-title price-after">Disney - Table
+                        d’appoint</h1>
+                    <div class="price ">
+                        <h1 class="price-before price-after-1">11,500.00
+                            dh</h1>
+                        <h1 class="button price-after-1">7,999.00
+                            dh</h1>
+                    </div>
+                </div>
+            </div><!-- product 4 -->
+
+            
+
+
+           
+
+
+          
+
+          
+        </div><!-- products -->
+
+        
+    </div><!-- Container 4 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="fotter   flex-start-start ">
+        <div class="fotter-logo flex">
+            <img width="294px" height="92px"
+                src="https://test.skilliday.com//wp-content/uploads/2024/11/Zibran/this-removebg-preview.png"
+                alt>
+        </div>
+        <div class="links-and-contacts row-space-between width-1 ">
+            <div class="fotter-links flex-start ">
+                <h1 class="button-white">Menu</h1>
+                <h1 class="button-white">Accueil</h1>
+                <h1 class="button-white">Tables</h1>
+                <h1 class="button-white">Chaises</h1>
+                <h1 class="button-white">Canpes</h1>
+                <h1 class="button-white">Fauteuil</h1>
+                <h1 class="button-white">Pouf</h1>
+                <h1 class="button-white">Contact</h1>
+            </div>
+
+            <div
+                class="fotter-Contacts-and-fotter-socail-icons flex-start">
+                <div class="fotter-Contacts flex-start">
+                    <div class="div-1 flex-start">
+                        <h1 class="principe-title-white">NOUS
+                            CONTACTER</h1>
+                        <h1 class="fotter-text">Si vous aimez entendre
+                            une voix à l'autre bout, nous sommes là pour
+                            vous avec tout ce dont vous avez besoin.</p>
+                    </div>
+                    <div class="gmail-and-whatsapp">
+                        <div class="div-2 flex-row-start">
+                            <h1 class="button-white ">Service client :
+                            </h1>
+                            <h1 class="contacts">+212 6000000</h1>
+                        </div>
+                        <div class="div-2 flex-row-start">
+                            <h1 class="button-white">Email :</h1>
+                            <h1 class="contacts">ilyas@gmail.com</h1>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="fotter-socail-icons ">
+                    <div class="div-x">
+                        <!-- Pintrest -->
+
+                        <svg class="socail-icons" aria-hidden="true"
+                            focusable="false"
+                            class="icon icon-pinterest"
+                            viewBox="0 0 20 20">
+                            <path fill="white"
+                                d="M10 2.01c2.124.01 4.16.855 5.666 2.353a8.087 8.087 0 0 1 1.277 9.68A7.952 7.952 0 0 1 10 18.04a8.164 8.164 0 0 1-2.276-.307c.403-.653.672-1.24.816-1.729l.567-2.2c.134.27.393.5.768.702.384.192.768.297 1.19.297.836 0 1.585-.24 2.248-.72a4.678 4.678 0 0 0 1.537-1.969c.37-.89.554-1.848.537-2.813 0-1.249-.48-2.315-1.43-3.227a5.061 5.061 0 0 0-3.65-1.374c-.893 0-1.729.154-2.478.461a5.023 5.023 0 0 0-3.236 4.552c0 .72.134 1.355.413 1.902.269.538.672.922 1.22 1.152.096.039.182.039.25 0 .066-.028.114-.096.143-.192l.173-.653c.048-.144.02-.288-.105-.432a2.257 2.257 0 0 1-.548-1.565 3.803 3.803 0 0 1 3.976-3.861c1.047 0 1.863.288 2.44.855.585.576.883 1.315.883 2.228 0 .768-.106 1.479-.317 2.122a3.813 3.813 0 0 1-.893 1.556c-.384.384-.836.576-1.345.576-.413 0-.749-.144-1.018-.451-.259-.307-.345-.672-.25-1.085.147-.514.298-1.026.452-1.537l.173-.701c.057-.25.086-.451.086-.624 0-.346-.096-.634-.269-.855-.192-.22-.451-.336-.797-.336-.432 0-.797.192-1.085.595-.288.394-.442.893-.442 1.499.005.374.063.746.173 1.104l.058.144c-.576 2.478-.913 3.938-1.037 4.36-.116.528-.154 1.153-.125 1.863A8.067 8.067 0 0 1 2 10.03c0-2.208.778-4.11 2.343-5.666A7.721 7.721 0 0 1 10 2.001v.01Z"></path>
+                        </svg>
+
+                        <!-- instagram -->
+                        <svg class="socail-icons" aria-hidden="true"
+                            focusable="false"
+                            class="icon icon-instagram"
+                            viewBox="0 0 20 20">
+                            <path fill="currentColor"
+                                fill-rule="evenodd"
+                                d="M13.23 3.492c-.84-.037-1.096-.046-3.23-.046-2.144 0-2.39.01-3.238.055-.776.027-1.195.164-1.487.273a2.43 2.43 0 0 0-.912.593 2.486 2.486 0 0 0-.602.922c-.11.282-.238.702-.274 1.486-.046.84-.046 1.095-.046 3.23 0 2.134.01 2.39.046 3.229.004.51.097 1.016.274 1.495.145.365.319.639.602.913.282.282.538.456.92.602.474.176.974.268 1.479.273.848.046 1.103.046 3.238.046 2.134 0 2.39-.01 3.23-.046.784-.036 1.203-.164 1.486-.273.374-.146.648-.329.921-.602.283-.283.447-.548.602-.922.177-.476.27-.979.274-1.486.037-.84.046-1.095.046-3.23 0-2.134-.01-2.39-.055-3.229-.027-.784-.164-1.204-.274-1.495a2.43 2.43 0 0 0-.593-.913 2.604 2.604 0 0 0-.92-.602c-.284-.11-.703-.237-1.488-.273ZM6.697 2.05c.857-.036 1.131-.045 3.302-.045 1.1-.014 2.202.001 3.302.045.664.014 1.321.14 1.943.374a3.968 3.968 0 0 1 1.414.922c.41.397.728.88.93 1.414.23.622.354 1.279.365 1.942C18 7.56 18 7.824 18 10.005c0 2.17-.01 2.444-.046 3.292-.036.858-.173 1.442-.374 1.943-.2.53-.474.976-.92 1.423a3.896 3.896 0 0 1-1.415.922c-.51.191-1.095.337-1.943.374-.857.036-1.122.045-3.302.045-2.171 0-2.445-.009-3.302-.055-.849-.027-1.432-.164-1.943-.364a4.152 4.152 0 0 1-1.414-.922 4.128 4.128 0 0 1-.93-1.423c-.183-.51-.329-1.085-.365-1.943C2.009 12.45 2 12.167 2 10.004c0-2.161 0-2.435.055-3.302.027-.848.164-1.432.365-1.942a4.44 4.44 0 0 1 .92-1.414 4.18 4.18 0 0 1 1.415-.93c.51-.183 1.094-.33 1.943-.366Zm.427 4.806a4.105 4.105 0 1 1 5.805 5.805 4.105 4.105 0 0 1-5.805-5.805Zm1.882 5.371a2.668 2.668 0 1 0 2.042-4.93 2.668 2.668 0 0 0-2.042 4.93Zm5.922-5.942a.958.958 0 1 1-1.355-1.355.958.958 0 0 1 1.355 1.355Z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <!-- facebook -->
+                        <svg class="socail-icons" aria-hidden="true"
+                            focusable="false" class="icon icon-facebook"
+                            viewBox="0 0 20 20">
+                            <path fill="currentColor"
+                                d="M18 10.049C18 5.603 14.419 2 10 2c-4.419 0-8 3.603-8 8.049C2 14.067 4.925 17.396 8.75 18v-5.624H6.719v-2.328h2.03V8.275c0-2.017 1.195-3.132 3.023-3.132.874 0 1.79.158 1.79.158v1.98h-1.009c-.994 0-1.303.621-1.303 1.258v1.51h2.219l-.355 2.326H11.25V18c3.825-.604 6.75-3.933 6.75-7.951Z"></path>
+                        </svg>
+                        <!-- tiktok -->
+                        <svg class="socail-icons" aria-hidden="true"
+                            focusable="false" class="icon icon-tiktok"
+                            viewBox="0 0 20 20">
+                            <path fill="currentColor"
+                                d="M10.511 1.705h2.74s-.157 3.51 3.795 3.768v2.711s-2.114.129-3.796-1.158l.028 5.606A5.073 5.073 0 1 1 8.213 7.56h.708v2.785a2.298 2.298 0 1 0 1.618 2.205L10.51 1.705Z"></path>
+                        </svg>
+                        <!-- Youtupe -->
+                        <svg class="socail-icons" aria-hidden="true"
+                            focusable="false" class="icon icon-youtube"
+                            viewBox="0 0 20 20">
+                            <path fill="currentColor"
+                                d="M18.16 5.87c.34 1.309.34 4.08.34 4.08s0 2.771-.34 4.08a2.125 2.125 0 0 1-1.53 1.53c-1.309.34-6.63.34-6.63.34s-5.321 0-6.63-.34a2.125 2.125 0 0 1-1.53-1.53c-.34-1.309-.34-4.08-.34-4.08s0-2.771.34-4.08a2.173 2.173 0 0 1 1.53-1.53C4.679 4 10 4 10 4s5.321 0 6.63.34a2.173 2.173 0 0 1 1.53 1.53ZM8.3 12.5l4.42-2.55L8.3 7.4v5.1Z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="fotter-copy-rights width flex-row-center">
+            <h1 class="copy-rights">© 2024, ILYAS Commerce électronique
+                propulsé par Shopify
+            </h1>
+            <div class="div-2 gap-1 flex-row-start">
+                <h1 class="copy-rights">
+                    Conditions d'utilisation
+                </h1>
+                <h1 class="copy-rights">Politique de remboursement</h1>
+            </div>
+            <div class="div-2 gap-2 flex-row-start">
+                <h1 class="copy-rights">Politique de
+                    confidentialité</h1>
+                <h1 class="copy-rights">
+                    Politique d'expédition</h1>
+            </div>
+        </div>
+
+    </div><!-- fotter-->
+</body>
+</html>

@@ -33,6 +33,11 @@ Light = 300
 Regular = 400
 Medium = 500 
 */
+
+a {
+  text-decoration: none;
+}
+
 .flex {
   display: flex;
   justify-content: center;
@@ -521,6 +526,7 @@ nav svg {
 
   display: flex;
   justify-content: space-evenly;
+  align-items: flex-start;
   flex-wrap: wrap;
 
   background-color: var(--container-2-background);
@@ -537,8 +543,8 @@ nav svg {
 }
 
 .container-2-image {
-  width: 315px;
-  height: 327px;
+  width: clamp(315px, 40vw, 500px);
+  height: clamp(327px, 40vw, 500px);
   background-image: url(https://test.skilliday.com/wp-content/uploads/2024/11/Zibran/10032.jpg);
   background-size: cover;
   border-radius: 20px;
@@ -550,7 +556,12 @@ nav svg {
 }
 
 .prix--promotion {
+  width: clamp(315px, 40vw, 500px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   gap: 5px;
+ 
 }
 
 .image--title {
@@ -560,8 +571,8 @@ nav svg {
 .container-2-top-price {
   width: 100%;
   display: flex;
-  justify-content: center;
-  gap: 25px;
+  justify-content: flex-start;
+  gap: 20px;
 }
 
 .promotion {
@@ -734,6 +745,7 @@ nav svg {
   padding-left: 15px;
 }
 
+
 .product-1 {
   width: clamp(160px, 40vw, 500px);
   height: clamp(250px, 56vw, 90vh);
@@ -753,10 +765,24 @@ nav svg {
 
 }
 
+
+.prt-width {
+  width: clamp(160px, 40vw, 290px);
+  height: clamp(250px, 56vw, 400px);
+
+ 
+}
+
 .product-image {
   width: 35vw;
   height: clamp(35vw, 100vw, 1000px);
   max-height: 70vh;
+
+}
+
+.prt-width-image {
+  width: clamp(140px, 35vw, 230px);
+  height: clamp(125px, 56vw, 200px);
 
 }
 
@@ -767,7 +793,7 @@ nav svg {
 }
 
 .price-after {
-
+  width:190px;
   font-size: clamp(14px, 3vw, 20px);
 }
 
@@ -775,6 +801,8 @@ nav svg {
   width: 130px;
   font-size: clamp(14px, 3vw, 20px);
 }
+
+
 
 
 .product-promotion {
@@ -926,9 +954,7 @@ nav svg {
     padding-left: 30px;
   }
 
-  .container-2-bottom {
-    margin-top: clamp(20px, 18vw, 150px);
-  }
+ 
 }
 
 .button-tout-afficher {
